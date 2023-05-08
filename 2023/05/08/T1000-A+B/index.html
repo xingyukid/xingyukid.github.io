@@ -1,0 +1,179 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>T1000 A+B | 幸愉编程</title><meta name="author" content="幸愉"><meta name="copyright" content="幸愉"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="✨：信息学一本通入门篇题目解析💭💟：幸愉编程 💜: 学习如逆水行舟，不进则退 💜💜🌸: 如有错误或不足之处，希望可以指正，非常感谢😉  题目描述求两个整数的和。 输入一行，两个用空格隔开的整数。 输出两个整数的和。 输入样例2 3 输出样例5 涉及知识点cin: 输入语句，用于输入两个整数 a 和 b。cout: 输出语句，用于输出显示计算结果。 解题思路定义两个变量 a 和 b，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="T1000 A+B">
+<meta property="og:url" content="http://xingyukid.github.io/2023/05/08/T1000-A+B/index.html">
+<meta property="og:site_name" content="幸愉编程">
+<meta property="og:description" content="✨：信息学一本通入门篇题目解析💭💟：幸愉编程 💜: 学习如逆水行舟，不进则退 💜💜🌸: 如有错误或不足之处，希望可以指正，非常感谢😉  题目描述求两个整数的和。 输入一行，两个用空格隔开的整数。 输出两个整数的和。 输入样例2 3 输出样例5 涉及知识点cin: 输入语句，用于输入两个整数 a 和 b。cout: 输出语句，用于输出显示计算结果。 解题思路定义两个变量 a 和 b，">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://xingyukid.github.io/img/C++.png">
+<meta property="article:published_time" content="2023-05-08T08:00:00.000Z">
+<meta property="article:modified_time" content="2023-05-08T08:07:10.870Z">
+<meta property="article:author" content="幸愉">
+<meta property="article:tag" content="顺序结构">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://xingyukid.github.io/img/C++.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://xingyukid.github.io/2023/05/08/T1000-A+B/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="baidu-site-verification" content="信奥学习交流网"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":false,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: 幸愉","link":"链接: ","source":"来源: 幸愉编程","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"bottom-left"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'T1000 A+B',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-05-08 16:07:10'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="baidu-site-verification" content="code-wWFjRd9rIH" /><meta name="generator" content="Hexo 6.3.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><script>const preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',()=> { preloader.endLoading() })
+
+if (false) {
+  document.addEventListener('pjax:send', () => { preloader.initLoading() })
+  document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+}</script><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/me.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">8</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-graduation-cap"></i><span> 关于幸愉</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-spinner"></i><span> 时光轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa-solid fa-images"></i><span> 相册</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/scenery"><i class="fa-fw fa-solid fa-photo-film"></i><span> 图库合集</span></a></li><li><a class="site-page child" href="/dianzixuehui"><i class="fa-fw fa-solid fa-star"></i><span> 电子学会历年成绩</span></a></li><li><a class="site-page child" href="/lanqiaobei"><i class="fa-fw fa-solid fa-medal"></i><span> 蓝桥杯历年辅导成绩</span></a></li><li><a class="site-page child" href="/xinxixueaosai"><i class="fa-fw fa-solid fa-trophy"></i><span> 信息学奥赛历年成绩</span></a></li><li><a class="site-page child" href="/life"><i class="fa-fw fa-sharp fa-solid fa-award"></i><span> 小刘老师生活集</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">幸愉编程</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-graduation-cap"></i><span> 关于幸愉</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-spinner"></i><span> 时光轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa-solid fa-images"></i><span> 相册</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/scenery"><i class="fa-fw fa-solid fa-photo-film"></i><span> 图库合集</span></a></li><li><a class="site-page child" href="/dianzixuehui"><i class="fa-fw fa-solid fa-star"></i><span> 电子学会历年成绩</span></a></li><li><a class="site-page child" href="/lanqiaobei"><i class="fa-fw fa-solid fa-medal"></i><span> 蓝桥杯历年辅导成绩</span></a></li><li><a class="site-page child" href="/xinxixueaosai"><i class="fa-fw fa-solid fa-trophy"></i><span> 信息学奥赛历年成绩</span></a></li><li><a class="site-page child" href="/life"><i class="fa-fw fa-sharp fa-solid fa-award"></i><span> 小刘老师生活集</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav></header><main class="layout" id="content-inner"><div id="post"><div id="post-info"><h1 class="post-title">T1000 A+B</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-05-08T08:00:00.000Z" title="发表于 2023-05-08 16:00:00">2023-05-08</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-05-08T08:07:10.870Z" title="更新于 2023-05-08 16:07:10">2023-05-08</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E4%BF%A1%E6%81%AF%E5%AD%A6%E4%B8%80%E6%9C%AC%E9%80%9A%E5%85%A5%E9%97%A8%E7%AF%87/">信息学一本通入门篇</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">315</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>1分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="T1000 A+B"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div><article class="post-content" id="article-container"><blockquote>
+<p>✨：信息学一本通入门篇题目解析💭<br>💟：幸愉编程 <br>💜: 学习如逆水行舟，不进则退 💜💜<br>🌸: 如有错误或不足之处，希望可以指正，非常感谢😉</p>
+</blockquote>
+<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>求两个整数的和。</p>
+<h1 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h1><p>一行，两个用空格隔开的整数。</p>
+<h1 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h1><p>两个整数的和。</p>
+<h1 id="输入样例"><a href="#输入样例" class="headerlink" title="输入样例"></a>输入样例</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">2 3</span><br></pre></td></tr></table></figure>
+<h1 id="输出样例"><a href="#输出样例" class="headerlink" title="输出样例"></a>输出样例</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">5</span><br></pre></td></tr></table></figure>
+<h1 id="涉及知识点"><a href="#涉及知识点" class="headerlink" title="涉及知识点"></a>涉及知识点</h1><p><strong>cin: 输入语句，用于输入两个整数 a 和 b。<br>cout: 输出语句，用于输出显示计算结果。</strong></p>
+<h1 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h1><p><strong>定义两个变量 a 和 b，使用 cin 语句输入两个变量，使用 cout 语句将两个整数的和正常输出。</strong></p>
+<h1 id="易错点"><a href="#易错点" class="headerlink" title="易错点"></a>易错点</h1><p><strong>若输入的 a 和 b 都是 int 类型中的最大值，那么 a + b 计算过后会超过 int 表示的最大范围，int 数据类型的范围是 [-2147483648, 2147483647]，这个时候需要使用更大的数据类型来表示，即采用 long long，这种易错点在电子学会考级一级里面考察过，平时练习需要注意！</strong></p>
+<h1 id="Cpp代码"><a href="#Cpp代码" class="headerlink" title="Cpp代码"></a>Cpp代码</h1><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="type">int</span> a, b;</span><br><span class="line">	cin&gt;&gt;a&gt;&gt;b;</span><br><span class="line">	cout&lt;&lt;a+b;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125; </span><br></pre></td></tr></table></figure>
+<h1 id="Python-3-代码"><a href="#Python-3-代码" class="headerlink" title="Python 3 代码"></a>Python 3 代码</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a , b = <span class="built_in">map</span>(<span class="built_in">int</span>, <span class="built_in">input</span>().split(<span class="string">&#x27; &#x27;</span>))</span><br><span class="line"><span class="built_in">print</span>(a+b)</span><br></pre></td></tr></table></figure>
+<p><img src="/./img/wxss.jpg" alt="微信公众号:幸愉聊信奥"></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="http://xingyukid.github.io">幸愉</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://xingyukid.github.io/2023/05/08/T1000-A+B/">http://xingyukid.github.io/2023/05/08/T1000-A+B/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://xingyukid.github.io" target="_blank">幸愉编程</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E9%A1%BA%E5%BA%8F%E7%BB%93%E6%9E%84/">顺序结构</a></div><div class="post_share"><div class="social-share" data-image="/./img/C++.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/weixin.png" target="_blank"><img class="post-qr-code-img" src="/img/weixin.png" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="/img/zhifubao.jpg" target="_blank"><img class="post-qr-code-img" src="/img/zhifubao.jpg" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2023/05/08/T1001-Hello-World/"><img class="prev-cover" src="/./img/C++.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">T1001 Hello,World!</div></div></a></div><div class="next-post pull-right"><a href="/2023/01/02/2022CSP-J%E7%AC%AC%E4%BA%8C%E8%BD%AE%E8%AE%A4%E8%AF%81%E8%A7%A3%E6%9E%90/"><img class="next-cover" src="/./img/noip.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">2022CSP-J第二轮认证真题解析</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2023/05/08/T1001-Hello-World/" title="T1001 Hello,World!"><img class="cover" src="/./img/C++.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-05-08</div><div class="title">T1001 Hello,World!</div></div></a></div><div><a href="/2023/05/08/T1003-%E5%AF%B9%E9%BD%90%E8%BE%93%E5%87%BA/" title="T1003 对齐输出"><img class="cover" src="/./img/C++.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-05-08</div><div class="title">T1003 对齐输出</div></div></a></div><div><a href="/2023/05/08/T1005-%E5%9C%B0%E7%90%83%E4%BA%BA%E5%8F%A3%E6%89%BF%E8%BD%BD%E5%8A%9B%E4%BC%B0%E8%AE%A1/" title="T1005 地球人口承载力估计”"><img class="cover" src="/./img/C++.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-05-08</div><div class="title">T1005 地球人口承载力估计”</div></div></a></div><div><a href="/2023/05/08/T1002-%E8%BE%93%E5%87%BA%E7%AC%AC%E4%BA%8C%E4%B8%AA%E6%95%B4%E6%95%B0/" title="T1002 输出第二个整数"><img class="cover" src="/./img/C++.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-05-08</div><div class="title">T1002 输出第二个整数</div></div></a></div><div><a href="/2023/05/08/T1004-%E5%AD%97%E7%AC%A6%E4%B8%89%E8%A7%92%E5%BD%A2/" title="T1004 字符三角形"><img class="cover" src="/./img/C++.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-05-08</div><div class="title">T1004 字符三角形</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/me.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">幸愉</div><div class="author-info__description"><font color="	#9370DB" style="text-align:left"><strong>信息学竞赛教练，专业带队参与C++信息学奥赛，已辅导多名学生通过信息学奥赛获奖升学，长期招收信奥 1v1 学员，报名请添加微信：LSX05311519</strong></font></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">8</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="http://xingyukid.cn"><i class="fa-solid fa-window"></i><span>幸愉的OJ</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/xingyukid" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="https://space.bilibili.com/396679725" target="_blank" title="bilibili"><i class="fas fa-brands fa-bilibili"></i></a></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0"><span class="toc-number">1.</span> <span class="toc-text">题目描述</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%BE%93%E5%85%A5"><span class="toc-number">2.</span> <span class="toc-text">输入</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%BE%93%E5%87%BA"><span class="toc-number">3.</span> <span class="toc-text">输出</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%BE%93%E5%85%A5%E6%A0%B7%E4%BE%8B"><span class="toc-number">4.</span> <span class="toc-text">输入样例</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%BE%93%E5%87%BA%E6%A0%B7%E4%BE%8B"><span class="toc-number">5.</span> <span class="toc-text">输出样例</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%B6%89%E5%8F%8A%E7%9F%A5%E8%AF%86%E7%82%B9"><span class="toc-number">6.</span> <span class="toc-text">涉及知识点</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%A7%A3%E9%A2%98%E6%80%9D%E8%B7%AF"><span class="toc-number">7.</span> <span class="toc-text">解题思路</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%98%93%E9%94%99%E7%82%B9"><span class="toc-number">8.</span> <span class="toc-text">易错点</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Cpp%E4%BB%A3%E7%A0%81"><span class="toc-number">9.</span> <span class="toc-text">Cpp代码</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Python-3-%E4%BB%A3%E7%A0%81"><span class="toc-number">10.</span> <span class="toc-text">Python 3 代码</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2023/05/08/T1005-%E5%9C%B0%E7%90%83%E4%BA%BA%E5%8F%A3%E6%89%BF%E8%BD%BD%E5%8A%9B%E4%BC%B0%E8%AE%A1/" title="T1005 地球人口承载力估计”"><img src="/./img/C++.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="T1005 地球人口承载力估计”"/></a><div class="content"><a class="title" href="/2023/05/08/T1005-%E5%9C%B0%E7%90%83%E4%BA%BA%E5%8F%A3%E6%89%BF%E8%BD%BD%E5%8A%9B%E4%BC%B0%E8%AE%A1/" title="T1005 地球人口承载力估计”">T1005 地球人口承载力估计”</a><time datetime="2023-05-08T08:05:00.000Z" title="发表于 2023-05-08 16:05:00">2023-05-08</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/05/08/T1004-%E5%AD%97%E7%AC%A6%E4%B8%89%E8%A7%92%E5%BD%A2/" title="T1004 字符三角形"><img src="/./img/C++.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="T1004 字符三角形"/></a><div class="content"><a class="title" href="/2023/05/08/T1004-%E5%AD%97%E7%AC%A6%E4%B8%89%E8%A7%92%E5%BD%A2/" title="T1004 字符三角形">T1004 字符三角形</a><time datetime="2023-05-08T08:04:00.000Z" title="发表于 2023-05-08 16:04:00">2023-05-08</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/05/08/T1003-%E5%AF%B9%E9%BD%90%E8%BE%93%E5%87%BA/" title="T1003 对齐输出"><img src="/./img/C++.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="T1003 对齐输出"/></a><div class="content"><a class="title" href="/2023/05/08/T1003-%E5%AF%B9%E9%BD%90%E8%BE%93%E5%87%BA/" title="T1003 对齐输出">T1003 对齐输出</a><time datetime="2023-05-08T08:03:00.000Z" title="发表于 2023-05-08 16:03:00">2023-05-08</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/05/08/T1002-%E8%BE%93%E5%87%BA%E7%AC%AC%E4%BA%8C%E4%B8%AA%E6%95%B4%E6%95%B0/" title="T1002 输出第二个整数"><img src="/./img/C++.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="T1002 输出第二个整数"/></a><div class="content"><a class="title" href="/2023/05/08/T1002-%E8%BE%93%E5%87%BA%E7%AC%AC%E4%BA%8C%E4%B8%AA%E6%95%B4%E6%95%B0/" title="T1002 输出第二个整数">T1002 输出第二个整数</a><time datetime="2023-05-08T08:02:00.000Z" title="发表于 2023-05-08 16:02:00">2023-05-08</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/05/08/T1001-Hello-World/" title="T1001 Hello,World!"><img src="/./img/C++.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="T1001 Hello,World!"/></a><div class="content"><a class="title" href="/2023/05/08/T1001-Hello-World/" title="T1001 Hello,World!">T1001 Hello,World!</a><time datetime="2023-05-08T08:01:00.000Z" title="发表于 2023-05-08 16:01:00">2023-05-08</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2022 - 2023 By 幸愉</div><div class="footer_custom_text">幸愉编程|码出未来 长期招收编程 1v1 学员！微信：LSX05311519</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"></div><canvas class="fireworks" mobile="true"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/fireworks.min.js"></script><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="true" data-click="true"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

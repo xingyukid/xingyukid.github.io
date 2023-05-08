@@ -4,11 +4,136 @@
   
     
     <entry>
-      <title>T1000 A+B</title>
-      <link href="/2023/05/10/T1000-A-B/"/>
-      <url>/2023/05/10/T1000-A-B/</url>
+      <title>T1005 地球人口承载力估计”</title>
+      <link href="/2023/05/08/T1005-%E5%9C%B0%E7%90%83%E4%BA%BA%E5%8F%A3%E6%89%BF%E8%BD%BD%E5%8A%9B%E4%BC%B0%E8%AE%A1/"/>
+      <url>/2023/05/08/T1005-%E5%9C%B0%E7%90%83%E4%BA%BA%E5%8F%A3%E6%89%BF%E8%BD%BD%E5%8A%9B%E4%BC%B0%E8%AE%A1/</url>
       
-        <content type="html"><![CDATA[<blockquote><p>✨：信息学一本通入门篇题目解析💭<br>💟：幸愉编程 <br>💜: 学习如逆水行舟，不进则退 💜💜<br>🌸: 如有错误或不足之处，希望可以指正，非常感谢😉</p></blockquote><h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>求两个整数的和。</p><h1 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h1><p>一行，两个用空格隔开的整数。</p><h1 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h1><p>两个整数的和。</p><h1 id="输入样例"><a href="#输入样例" class="headerlink" title="输入样例"></a>输入样例</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">2 3</span><br></pre></td></tr></table></figure><h1 id="输出样例"><a href="#输出样例" class="headerlink" title="输出样例"></a>输出样例</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">5</span><br></pre></td></tr></table></figure><h1 id="涉及知识点"><a href="#涉及知识点" class="headerlink" title="涉及知识点"></a>涉及知识点</h1><p>cin: 输入语句，用于输入两个整数 a 和 b。<br>cout: 输出语句，用于输出显示计算结果。</p><h1 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h1><p>定义两个变量 a 和 b，使用 cin 语句输入两个变量，使用 cout 语句将两个整数的和正常输出。</p><h1 id="易错点"><a href="#易错点" class="headerlink" title="易错点"></a>易错点</h1><p>若输入的 a 和 b 都是 int 类型中的最大值，那么 a + b 计算过后会超过 int 表示的最大范围，int 数据类型的范围是 [-2147483648, 2147483647]，这个时候需要使用更大的数据类型来表示，即采用 long long，这种易错点在电子学会考级一级里面考察过，平时练习需要注意！</p><h1 id="Cpp代码"><a href="#Cpp代码" class="headerlink" title="Cpp代码"></a>Cpp代码</h1><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="type">int</span> a, b;</span><br><span class="line">cin&gt;&gt;a&gt;&gt;b;</span><br><span class="line">cout&lt;&lt;a+b;</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125; </span><br></pre></td></tr></table></figure><h1 id="Python-代码"><a href="#Python-代码" class="headerlink" title="Python 代码"></a>Python 代码</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a , b = <span class="built_in">map</span>(<span class="built_in">int</span>, <span class="built_in">input</span>().split(<span class="string">&#x27; &#x27;</span>))</span><br><span class="line"><span class="built_in">print</span>(a+b)</span><br></pre></td></tr></table></figure><p><img src="/./img/wxss.jpg" alt="微信公众号:幸愉聊信奥"></p>]]></content>
+        <content type="html"><![CDATA[<blockquote><p>✨：信息学一本通入门篇题目解析💭<br>💟：幸愉编程 <br>💜: 学习如逆水行舟，不进则退 💜💜<br>🌸: 如有错误或不足之处，希望可以指正，非常感谢😉</p></blockquote><h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>假设地球上的新生资源按恒定速度增长。照此测算，地球上现有资源加上新生资源可供 x 亿人生活 a 年，或供 y 亿人生活 b 年。<br>为了能够实现可持续发展，避免资源枯竭，地球最多能够养活多少亿人？</p><h1 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h1><p>一行，包括四个正整数 x，a，y，b，两个整数之间用单个空格隔开。x&gt;y，a&lt;b，ax​ &lt; by​，各整数均不大于 10000。</p><h1 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h1><p>一个实数 z，表示地球最多养活 z 亿人，舍入到小数点后两位。</p><h1 id="输入样例"><a href="#输入样例" class="headerlink" title="输入样例"></a>输入样例</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">110 90 90 210</span><br></pre></td></tr></table></figure><h1 id="输出样例"><a href="#输出样例" class="headerlink" title="输出样例"></a>输出样例</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">75.00</span><br></pre></td></tr></table></figure><h1 id="涉及知识点"><a href="#涉及知识点" class="headerlink" title="涉及知识点"></a>涉及知识点</h1><p><strong>浮点数的输出，C++ 中保留两位小数输出：<br><code>cout<<fixed<<setprecision(2)<<浮点数变量名;</code><br>C 语言中保留两位小数的格式化输出：<br><code>printf("%.2f", 浮点类型变量名);</code><br>数据类型使用 double 进行运算，读入可以是整数或者使用实数 double 数据类型，因为 整数&#x2F;整数 执行的是整数除法，无法保留小数位，造成计算的数据错误。</strong></p><h1 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h1><p><strong>x 亿人生活 a 年需要的资源是 a<em>x，y 亿人生活 b 年需要的资源是 y</em>b，由于x &lt; y 且 a &lt; b，那么 y<em>b &gt; x</em>a 这部分多的资源就是地球的可再生能源，b - a 表示可再生能源的年份，资源差&#x2F;年份差 就是地球最多能养活的人口数。</strong></p><h1 id="易错点"><a href="#易错点" class="headerlink" title="易错点"></a>易错点</h1><p>AC代码中的错误代码如下:</p><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iomanip&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="type">int</span> x,y,a,b;</span><br><span class="line"><span class="type">double</span> z;</span><br><span class="line">cin&gt;&gt;x&gt;&gt;a&gt;&gt;y&gt;&gt;b;</span><br><span class="line">z=(y*b-x*a)/(b-a);  <span class="comment">//整数的结果赋值给浮点数</span></span><br><span class="line">cout&lt;&lt;<span class="built_in">setiosflags</span>(ios::fixed)&lt;&lt;<span class="built_in">setprecision</span>(<span class="number">2</span>);</span><br><span class="line">cout&lt;&lt;z&lt;&lt;endl;</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h1 id="Cpp-代码"><a href="#Cpp-代码" class="headerlink" title="Cpp 代码"></a>Cpp 代码</h1><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="type">int</span> x,a,y,d,z;</span><br><span class="line">    cin&gt;&gt;x&gt;&gt;a&gt;&gt;y&gt;&gt;d;</span><br><span class="line">    cout&lt;&lt;fixed&lt;&lt;<span class="built_in">setprecision</span>(<span class="number">2</span>)&lt;&lt;(<span class="type">double</span>)(d*y-a*x)/(d-a)&lt;&lt;endl;       </span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h1 id="Python-3-代码"><a href="#Python-3-代码" class="headerlink" title="Python 3 代码"></a>Python 3 代码</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">x, a, y, b = <span class="built_in">map</span>(<span class="built_in">int</span>, <span class="built_in">input</span>().split(<span class="string">&#x27; &#x27;</span>))</span><br><span class="line">ans = (y*b - a*x)/(b - a)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;%.2f&quot;</span>%ans)</span><br></pre></td></tr></table></figure><p><img src="/./img/wxss.jpg" alt="微信公众号:幸愉聊信奥"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 信息学一本通入门篇 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 顺序结构 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>T1004 字符三角形</title>
+      <link href="/2023/05/08/T1004-%E5%AD%97%E7%AC%A6%E4%B8%89%E8%A7%92%E5%BD%A2/"/>
+      <url>/2023/05/08/T1004-%E5%AD%97%E7%AC%A6%E4%B8%89%E8%A7%92%E5%BD%A2/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>✨：信息学一本通入门篇题目解析💭<br>💟：幸愉编程 <br>💜: 学习如逆水行舟，不进则退 💜💜<br>🌸: 如有错误或不足之处，希望可以指正，非常感谢😉</p></blockquote><h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>给定一个字符，用它构造一个底边长 5 个字符，高 3 个字符的等腰字符三角形。</p><h1 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h1><p>输入只有一行，包含一个字符。</p><h1 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h1><p>该字符构成的等腰三角形，底边长 5 个字符，高 3 个字符。</p><h1 id="输入样例"><a href="#输入样例" class="headerlink" title="输入样例"></a>输入样例</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">*</span><br></pre></td></tr></table></figure><h1 id="输出样例"><a href="#输出样例" class="headerlink" title="输出样例"></a>输出样例</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">  *</span><br><span class="line"> ***</span><br><span class="line">*****</span><br></pre></td></tr></table></figure><h1 id="涉及知识点"><a href="#涉及知识点" class="headerlink" title="涉及知识点"></a>涉及知识点</h1><p><strong>定义一个字符变量使用字符数据类型的关键字 char 来定义<br>使用输入语句 cin 来读取，然后使用 cout 或者 printf 输出即可</strong></p><h1 id="易错点"><a href="#易错点" class="headerlink" title="易错点"></a>易错点</h1><p><strong>字符 ‘5’ 和 数字 5 是不同的，一些比较坑的题目字符给的数字字符，很多初学者会误认为是整数造成数据类型使用错误而答案错误。区别数字和数字字符的不同是比较 ASCII 码值。</strong></p><h1 id="Cpp-代码"><a href="#Cpp-代码" class="headerlink" title="Cpp 代码"></a>Cpp 代码</h1><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="type">char</span> ch;</span><br><span class="line">cin&gt;&gt;ch;</span><br><span class="line">cout&lt;&lt;<span class="string">&quot;  &quot;</span>&lt;&lt;ch&lt;&lt;endl;</span><br><span class="line">cout&lt;&lt;<span class="string">&quot; &quot;</span>&lt;&lt;ch&lt;&lt;ch&lt;&lt;ch&lt;&lt;endl;</span><br><span class="line">cout&lt;&lt;ch&lt;&lt;ch&lt;&lt;ch&lt;&lt;ch&lt;&lt;ch&lt;&lt;endl;</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h1 id="Python-3-代码"><a href="#Python-3-代码" class="headerlink" title="Python 3 代码"></a>Python 3 代码</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">a = input()</span><br><span class="line">a1 = &quot;  &quot; + a </span><br><span class="line">a2 = &quot; &quot; + a + a + a</span><br><span class="line">a3 = a + a + a + a + a</span><br><span class="line">print(a1[::1])</span><br><span class="line">print(a2[::1])</span><br><span class="line">print(a3[::1])</span><br></pre></td></tr></table></figure><p><img src="/./img/wxss.jpg" alt="微信公众号:幸愉聊信奥"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 信息学一本通入门篇 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 顺序结构 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>T1003 对齐输出</title>
+      <link href="/2023/05/08/T1003-%E5%AF%B9%E9%BD%90%E8%BE%93%E5%87%BA/"/>
+      <url>/2023/05/08/T1003-%E5%AF%B9%E9%BD%90%E8%BE%93%E5%87%BA/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>✨：信息学一本通入门篇题目解析💭<br>💟：幸愉编程 <br>💜: 学习如逆水行舟，不进则退 💜💜<br>🌸: 如有错误或不足之处，希望可以指正，非常感谢😉</p></blockquote><h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>读入三个整数，按每个整数占 8 个字符的宽度，右对齐输出它们，按照格式要求依次输出三个整数，之间以一个空格分开。</p><h1 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h1><p>只有一行，包含三个整数，整数之间以一个空格分开。</p><h1 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h1><p>只有一行，按照格式要求依次输出三个整数，之间以一个空格分开。</p><h1 id="输入样例"><a href="#输入样例" class="headerlink" title="输入样例"></a>输入样例</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">123456789 0 -1</span><br></pre></td></tr></table></figure><h1 id="输出样例"><a href="#输出样例" class="headerlink" title="输出样例"></a>输出样例</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">123456789        0       -1</span><br></pre></td></tr></table></figure><h1 id="涉及知识点"><a href="#涉及知识点" class="headerlink" title="涉及知识点"></a>涉及知识点</h1><p>对齐，这里使用 C 语言的格式化输出对齐比较方便，且效率比 C++ 中的 cin 和 cout 的效率高<br>整数的格式化对其输出:<br>左对齐：printf(“%-md”,变量名); 左对齐输出 m 位，不足 m 位，右边补空格<br>右对其：printf(“%md”, 变量名); 右对齐输出 m 位，不足 m 位，左边补空格<br>易错点<br>输出的三个数，相邻两个数之间有一个空格，很多同学输出的时候少输出了一个空格</p><h1 id="Cpp-代码"><a href="#Cpp-代码" class="headerlink" title="Cpp 代码"></a>Cpp 代码</h1><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="type">int</span> a, b, c;</span><br><span class="line">cin&gt;&gt;a&gt;&gt;b&gt;&gt;c;</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;%8d %8d %8d&quot;</span>,a,b,c); </span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h1 id="Python-3-代码"><a href="#Python-3-代码" class="headerlink" title="Python 3 代码"></a>Python 3 代码</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a, b, c = <span class="built_in">map</span>(<span class="built_in">int</span>, <span class="built_in">input</span>().split(<span class="string">&#x27; &#x27;</span>))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;%8s&quot;</span> %a, end = <span class="string">&#x27; &#x27;</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;%8s&quot;</span> %b, end = <span class="string">&#x27; &#x27;</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;%8s&quot;</span> %c)</span><br></pre></td></tr></table></figure><p><img src="/./img/wxss.jpg" alt="微信公众号:幸愉聊信奥"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 信息学一本通入门篇 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 顺序结构 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>T1002 输出第二个整数</title>
+      <link href="/2023/05/08/T1002-%E8%BE%93%E5%87%BA%E7%AC%AC%E4%BA%8C%E4%B8%AA%E6%95%B4%E6%95%B0/"/>
+      <url>/2023/05/08/T1002-%E8%BE%93%E5%87%BA%E7%AC%AC%E4%BA%8C%E4%B8%AA%E6%95%B4%E6%95%B0/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>✨：信息学一本通入门篇题目解析💭<br>💟：幸愉编程 <br>💜: 学习如逆水行舟，不进则退 💜💜<br>🌸: 如有错误或不足之处，希望可以指正，非常感谢😉</p></blockquote><h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>输入三个整数，整数之间由一个空格分隔，整数是 32 位有符号整数。把第二个输入的整数输出。</p><h1 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h1><p>只有一行，共三个整数，整数之间由一个空格分隔。整数是 32 位有符号整数。</p><h1 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h1><p>只有一行，一个整数，即输入的第二个整数。</p><h1 id="输入样例"><a href="#输入样例" class="headerlink" title="输入样例"></a>输入样例</h1><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="number">123</span> <span class="number">456</span> <span class="number">789</span></span><br></pre></td></tr></table></figure><h1 id="输出样例"><a href="#输出样例" class="headerlink" title="输出样例"></a>输出样例</h1><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="number">456</span></span><br></pre></td></tr></table></figure><h1 id="涉及知识点"><a href="#涉及知识点" class="headerlink" title="涉及知识点"></a>涉及知识点</h1><strong>整数 32 位有符号整数使用数据类型 int变量的定义：数据类型 + 空格 + 变量名;变量名的命名规则：① 只能由数字、字符、下划线组成。② 开头不能是数字。③ 不可以是关键字。④ 字符不能是标点符号和运算符。⑤ 不可以包含空格。</strong><h1 id="Cpp-代码"><a href="#Cpp-代码" class="headerlink" title="Cpp 代码"></a>Cpp 代码</h1><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> a,b,c;</span><br><span class="line">    cin&gt;&gt;a&gt;&gt;b&gt;&gt;c;</span><br><span class="line">    cout&lt;&lt;b&lt;&lt;endl;</span><br><span class="line">  <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h1 id="Python-3-代码"><a href="#Python-3-代码" class="headerlink" title="Python 3 代码"></a>Python 3 代码</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a , b, c = <span class="built_in">map</span>(<span class="built_in">int</span>, <span class="built_in">input</span>().split(<span class="string">&#x27; &#x27;</span>))</span><br><span class="line"><span class="built_in">print</span>(b)</span><br></pre></td></tr></table></figure><p><img src="/./img/wxss.jpg" alt="微信公众号:幸愉聊信奥"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 信息学一本通入门篇 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 顺序结构 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>T1001 Hello,World!</title>
+      <link href="/2023/05/08/T1001-Hello-World/"/>
+      <url>/2023/05/08/T1001-Hello-World/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>✨：信息学一本通入门篇题目解析💭<br>💟：幸愉编程 <br>💜: 学习如逆水行舟，不进则退 💜💜<br>🌸: 如有错误或不足之处，希望可以指正，非常感谢😉</p></blockquote><h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>输出一个 Hello,World!</p><h1 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h1><p>( 无 )</p><h1 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h1><p>Hello,World!</p><h1 id="涉及知识点"><a href="#涉及知识点" class="headerlink" title="涉及知识点"></a>涉及知识点</h1><p><strong>C++ 基础程序框架 👇</strong></p><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><strong>cout 语句输出一串字符，即 cout&lt;&lt;”输出的内容”; 双引号会将字符串的内容原样输出。</strong></p><h1 id="Cpp-代码"><a href="#Cpp-代码" class="headerlink" title="Cpp 代码"></a>Cpp 代码</h1><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;Hello,World!&quot;</span>;</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h1 id="Python-3-代码"><a href="#Python-3-代码" class="headerlink" title="Python 3 代码"></a>Python 3 代码</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="string">&quot;Hello,World!&quot;</span>)</span><br></pre></td></tr></table></figure><p><img src="/./img/wxss.jpg" alt="微信公众号:幸愉聊信奥"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 信息学一本通入门篇 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 顺序结构 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>T1000 A+B</title>
+      <link href="/2023/05/08/T1000-A+B/"/>
+      <url>/2023/05/08/T1000-A+B/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>✨：信息学一本通入门篇题目解析💭<br>💟：幸愉编程 <br>💜: 学习如逆水行舟，不进则退 💜💜<br>🌸: 如有错误或不足之处，希望可以指正，非常感谢😉</p></blockquote><h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>求两个整数的和。</p><h1 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h1><p>一行，两个用空格隔开的整数。</p><h1 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h1><p>两个整数的和。</p><h1 id="输入样例"><a href="#输入样例" class="headerlink" title="输入样例"></a>输入样例</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">2 3</span><br></pre></td></tr></table></figure><h1 id="输出样例"><a href="#输出样例" class="headerlink" title="输出样例"></a>输出样例</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">5</span><br></pre></td></tr></table></figure><h1 id="涉及知识点"><a href="#涉及知识点" class="headerlink" title="涉及知识点"></a>涉及知识点</h1><p><strong>cin: 输入语句，用于输入两个整数 a 和 b。<br>cout: 输出语句，用于输出显示计算结果。</strong></p><h1 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h1><p><strong>定义两个变量 a 和 b，使用 cin 语句输入两个变量，使用 cout 语句将两个整数的和正常输出。</strong></p><h1 id="易错点"><a href="#易错点" class="headerlink" title="易错点"></a>易错点</h1><p><strong>若输入的 a 和 b 都是 int 类型中的最大值，那么 a + b 计算过后会超过 int 表示的最大范围，int 数据类型的范围是 [-2147483648, 2147483647]，这个时候需要使用更大的数据类型来表示，即采用 long long，这种易错点在电子学会考级一级里面考察过，平时练习需要注意！</strong></p><h1 id="Cpp代码"><a href="#Cpp代码" class="headerlink" title="Cpp代码"></a>Cpp代码</h1><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="type">int</span> a, b;</span><br><span class="line">cin&gt;&gt;a&gt;&gt;b;</span><br><span class="line">cout&lt;&lt;a+b;</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125; </span><br></pre></td></tr></table></figure><h1 id="Python-3-代码"><a href="#Python-3-代码" class="headerlink" title="Python 3 代码"></a>Python 3 代码</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a , b = <span class="built_in">map</span>(<span class="built_in">int</span>, <span class="built_in">input</span>().split(<span class="string">&#x27; &#x27;</span>))</span><br><span class="line"><span class="built_in">print</span>(a+b)</span><br></pre></td></tr></table></figure><p><img src="/./img/wxss.jpg" alt="微信公众号:幸愉聊信奥"></p>]]></content>
       
       
       <categories>
